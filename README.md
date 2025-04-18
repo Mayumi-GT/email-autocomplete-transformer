@@ -33,13 +33,17 @@ project_root/
 * Python 3.9 or higher
 * Access to Google Colab or a local environment with high CPU/GPU, RAM.
 
-### Installation
+### Data Acquisition
+1.  Download the Enron Email Dataset from Kaggle: [https://www.kaggle.com/datasets/wcukierski/enron-email-dataset](https://www.kaggle.com/datasets/wcukierski/enron-email-dataset)
+2.  Place the `emails.csv` file into a `data/` directory within the project root (e.g., `project_root/data/emails.csv`). *Note: The file size is ~1.5GB*
+
+### Installation & Download
 1. **Clone the repository:**
     ```bash
     git clone https://github.com/Mayumi-GT/email-autocomplete-transformer
     cd email-autocomplete-transformer
     ```
-2.  **Open the `Email_Text_Autocomplete.ipynb` notebook.
+2. **Open the `Email_Text_Autocomplete.ipynb` notebook.**
     *Core dependencies include:* `pandas`, `scikit-learn`, `nltk`, `transformers`, `torch`, `tqdm`, `huggingface_hub`, `accelerate`, `ipywidgets`, `gradio`.
     Google Colab comes with many of them pre-installed
 
