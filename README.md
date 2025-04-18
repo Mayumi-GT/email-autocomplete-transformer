@@ -18,7 +18,8 @@ project_root/
 │   ├── data_preprocessing.py # Functions for loading, cleaning, splitting data
 │   ├── evaluation.py         # Functions for calculating accuracy and KSR
 │   ├── baseline_ngram.py     # Functions for N-gram baseline models
-│   └── model.py              # Functions for Transformer models
+│   ├── model.py              # Functions for Transformer models
+│   └── test_evaluation.py      # Main script to run evaluation pipeline 
 ├── fine_tuned_distilgpt2_subset_test/  # Saved fine-tuned model artifacts, trained on subset data
 ├── evaluation_results_detailed.csv # Example detailed output from evaluation script
 ├── char_ngram_model.pkl      # Saved Character N-gram baseline model (N=3, 50k sample)
