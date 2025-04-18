@@ -8,26 +8,31 @@ It compares the performance of a pre-trained `distilgpt2` model with the fine-tu
 ## 2. Project Structure
 ```
 project_root/
-|── data/
-│   ├── emails.csv (from https://www.kaggle.com/datasets/wcukierski/enron-email-dataset)
+├── data/
+│   └── emails.csv              # Raw data source (Not included - please see Setup section)
 ├── notebooks/
-│   ├── Email_Text_Autocomplete.ipynb  # Main notebook for setup, evaluation, fine-tuning
-│   └── Project_Demo_Gradio.ipynb # Interactive demo notebook
-├── src/                      # Source code modules
-│   ├── __init__.py           # Makes 'src' a Python package
-│   ├── data_preprocessing.py # Functions for loading, cleaning, splitting data
-│   ├── evaluation.py         # Functions for calculating accuracy and KSR
-│   ├── baseline_ngram.py     # Functions for N-gram baseline models
-│   ├── model.py              # Functions for Transformer models
-│   └── test_evaluation.py      # Main script to run evaluation pipeline 
-├── fine_tuned_distilgpt2_subset_test/  # Saved fine-tuned model artifacts, trained on subset data
-├── evaluation_results_detailed.csv # Example detailed output from evaluation script
-├── char_ngram_model.pkl      # Saved Character N-gram baseline model (N=3, 50k sample)
-├── word_ngram_model.pkl      # Saved Word N-gram baseline model (N=3, 50k sample)
-├── train_subset.txt          # Subset of training data used for fine-tuning
-├── val_subset.txt            # Subset of validation data
-└── README.md 
+│   ├── email_text_autocomplete.ipynb  # Main execution notebook (eval, fine-tuning)
+│   └── Project_Demo_Gradio.ipynb      # Interactive Gradio demo notebook
+├── src/
+│   ├── init.py                 # Makes 'src' a Python package
+│   ├── data_preprocessing.py   # Data loading, cleaning, splitting functions
+│   ├── evaluation.py           # Accuracy & KSR metric calculation functions
+│   ├── baseline_ngram.py       # N-gram baseline model implementation
+│   └── model.py                # Transformer model implementation (setup, predict, fine-tune)
+│   └── test_evaluation.py      # Main script to run evaluation pipeline
+└── README.md
+
+--- Generated Outputs (Created by running notebooks/scripts) ---
+fine_tuned_distilgpt2_subset_test/ # Saved fine-tuned model
+evaluation_results_detailed.csv # Detailed evaluation results
+char_ngram_model.pkl # Saved N-gram model for char to char
+word_ngram_model.pkl # Saved N-gram model for word to word
+train.txt # Generated: Full training text
+val.txt # Generated: Full validation text
+train_subset.txt # Generated: Subset training text
+val_subset.txt # Generated: Subset validation text               
 ```
+
 ## 3. Setup
 
 ### Prerequisites
