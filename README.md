@@ -27,6 +27,8 @@ fine_tuned_distilgpt2_subset_test/ # Saved fine-tuned model
 evaluation_results_detailed.csv    # Detailed evaluation results
 char_ngram_model.pkl               # Saved N-gram model for char to char
 word_ngram_model.pkl               # Saved N-gram model for word to word
+train.txt                          # Generated: training text, originally considered to be used
+val.txt                            # Generated: validation text, originally considered to be used         
 train_subset.txt                   # Generated: Subset training text
 val_subset.txt                     # Generated: Subset validation text               
 ```
