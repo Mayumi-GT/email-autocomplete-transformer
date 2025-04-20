@@ -22,15 +22,13 @@ project_root/
 │   └── test_evaluation.py      # Main script to run evaluation pipeline
 └── README.md
 
---- Generated Outputs (Created by running notebooks/scripts) ---
+--- Followings are generated files running notebooks/scripts above ---
 fine_tuned_distilgpt2_subset_test/ # Saved fine-tuned model
-evaluation_results_detailed.csv # Detailed evaluation results
-char_ngram_model.pkl # Saved N-gram model for char to char
-word_ngram_model.pkl # Saved N-gram model for word to word
-train.txt # Generated: Full training text
-val.txt # Generated: Full validation text
-train_subset.txt # Generated: Subset training text
-val_subset.txt # Generated: Subset validation text               
+evaluation_results_detailed.csv    # Detailed evaluation results
+char_ngram_model.pkl               # Saved N-gram model for char to char
+word_ngram_model.pkl               # Saved N-gram model for word to word
+train_subset.txt                   # Generated: Subset training text
+val_subset.txt                     # Generated: Subset validation text               
 ```
 
 ## 3. Setup
